@@ -5,13 +5,14 @@
 	text-align: center;
 }
 
-* {
+header, .box {
 	background: var(--bs-yellow);
 }
 
 #root {
 	max-width: 1600px;
     margin: 48px auto;
+    padding: 0 16px;
 }
 
 .box {
