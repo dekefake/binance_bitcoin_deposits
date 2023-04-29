@@ -5,8 +5,8 @@
 	text-align: center;
 }
 
-html {
-	background: #FFD312;
+* {
+	background: var(--bs-yellow);
 }
 
 #root {

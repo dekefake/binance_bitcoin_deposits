@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Button from './Button';
 import Transaction from './Transaction';
 import offline_data from './offline_data';
 import './TransactionsList.css';
