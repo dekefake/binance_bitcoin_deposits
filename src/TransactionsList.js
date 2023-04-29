@@ -26,7 +26,7 @@ export default function TransactionsList({address}){
 	return (
 		<div className="TransactionsList">
 			<RefreshList onSmash={() => { SetTransactions(FetchTransactions()) }}>
-				Refresh List
+				<strong>Refresh List</strong>
 			</RefreshList>
 			<div className="btc_txs">
 				{

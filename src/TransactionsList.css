@@ -2,7 +2,11 @@
 	margin-top: 24px;
 }
 
-.btc_tx {
-	padding: 16px;
-	margin-top: 4px;
+.btc_txs * {
+	text-align: left;
+    font-family: monaco, system-ui;
+}
+
+.RefreshList {
+	cursor: pointer;
 }

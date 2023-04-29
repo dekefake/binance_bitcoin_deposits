@@ -1,0 +1,15 @@
+.btc_tx {
+	padding: 16px;
+    margin-top: 4px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+span.btc_tx_timestamp {
+    width: 300px;
+}
+
+.btc_tx_amount {
+    margin-left: auto;
+}
