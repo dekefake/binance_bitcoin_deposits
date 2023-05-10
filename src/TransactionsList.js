@@ -3,6 +3,9 @@ import Transaction from './Transaction';
 import offline_data from './offline_data';
 import './TransactionsList.css';
 
+import {WalletChatWidget} from 'react-wallet-chat-v0'
+import 'react-wallet-chat-v0/dist/index.css'
+
 function FetchTransactions(){
 	// TODO : FETCH TRANSACTIONS FROM SOME API INSTEAD OF USING A STATIC JSON
 	/*
@@ -21,6 +24,7 @@ function RefreshList({ children, onSmash }){
 
 export default function TransactionsList({address}){
 	const [transactions, SetTransactions ] = useState({address: address, txs:[]});
+	const [widgetState, setWidgetState] = useState({});
 
 	return (
 		<div className="TransactionsList">
@@ -36,6 +40,18 @@ export default function TransactionsList({address}){
 				}
 			</div>
 
+			<RefreshList onSmash={() => {
+		        setWidgetState(
+			        {
+			           ...widgetState, 
+			          chatAddr: 'mojiclub.eth',
+			          isOpen: true
+			        }
+			    )
+		    }}>
+				<strong>Chat With Owner</strong>
+			</RefreshList>
+			<WalletChatWidget widgetState={widgetState}/>
 		</div>
 	);
 }
