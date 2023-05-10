@@ -44,7 +44,7 @@ export default function TransactionsList({address}){
 		        setWidgetState(
 			        {
 			           ...widgetState, 
-			          chatAddr: 'mojiclub.eth',
+			          chatAddr: 'Wallet-Chat.eth',
 			          isOpen: true
 			        }
 			    )
